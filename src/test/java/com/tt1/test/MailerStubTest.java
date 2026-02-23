@@ -10,16 +10,12 @@ class MailerStubTest {
 
     @BeforeEach
     void setUp() {
-        // Arrange
         mailer = new MailerStub();
     }
 
     @Test
     void testEnviarCorreo() {
-        // Act
         boolean resultado = mailer.enviarCorreo("profesor@unirioja.es", "Práctica terminada");
-
-        // Assert
         assertTrue(resultado, "El método debería devolver true al enviar el correo");
     }
 }
